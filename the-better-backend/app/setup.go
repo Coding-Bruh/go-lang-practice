@@ -3,9 +3,9 @@ package app
 import (
     "os"
 
-    "../config"
-    "../database"
-    "../router"
+    "github.com/Coding-Bruh/go-lang-practice/tree/main/the-better-backend/config"
+    "github.com/Coding-Bruh/go-lang-practice/tree/main/the-better-backend/database"
+    "github.com/Coding-Bruh/go-lang-practice/tree/main/the-better-backend/router"
 
     "github.com/gofiber/fiber/v2"
     "github.com/gofiber/fiber/v2/middleware/logger"

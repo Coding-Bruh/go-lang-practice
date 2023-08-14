@@ -1,9 +1,9 @@
 package router
 
 import (
-    "../handlers"
+    "github.com/Coding-Bruh/go-lang-practice/tree/main/the-better-backend/handlers"
 
-    "github.com/gofiberfiber/v2"
+    "github.com/gofiber/fiber/v2"
 )
 
 func SetupRoutes(app *fiber.App) {
