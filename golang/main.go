@@ -5,40 +5,26 @@ import "fmt"
 var someName = "hello"
 
 func main () {
+    age := 35
+    name := "Abhinav Chennapareddy" 
 
-    // string 
-    var nameOne string = "mario"
-    var nameTwo = "luigi"
-    var nameThree string
+    //Print
+    fmt.Print("hello, ")
+    fmt.Print("world! \n")
+    fmt.Print("new line \n")
 
-    fmt.Println(nameOne, nameTwo, nameThree)
+    fmt.Println("hello ninjas!")
+    fmt.Println("Goodbye ninjas!")
+    fmt.Println("my age is", age , "and my name is", name)
 
-    nameOne = "peach"
-    nameThree = "bowser"
+    //Printf(format string) &_ = format specifier
+    fmt.Printf("my age is %d and my name is %s\n", age, name)
 
-    fmt.Println(nameOne, nameTwo, nameThree)
+    fmt.Printf("age is of type %t \n", age)
+    fmt.Printf("you scored %f points \n", 255.55)
+    fmt.Printf("you scored %0.1f points \n", 255.55)
 
-    nameFour := "yoshi"
-    fmt.Println(nameFour)
-
-    // ints
-    var ageOne int = 29
-    var ageTwo = 30
-    ageThree := 40
-
-    fmt.Println(ageOne, ageTwo, ageThree)
-
-    // bits & memory
-    var numOne int8 = 25
-    var numTwo int8 = -128
-    var numThree uint8 = 255 //255 max valid number for uint8
-    var numFour uint16 = 256
-
-    fmt.Println(numOne, numTwo, numThree, numFour)
-
-    // floating point
-    var scoreOne float32 = 25.98
-    var scoreTwo float64 = 9899867587385364566574.7
-    
-    fmt.Println(scoreOne, scoreTwo)
+    // Sprintf (save formatted stirngs)
+    var str = fmt.Sprintf("my age is %d and my name is %s\n", age, name)
+    fmt.Println("the saved string is:", str)
 }
